@@ -74,7 +74,7 @@ const appStyle = {
   height: '100vh',
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center',
+
   alignItems: 'center',
   gap: 20,
   fontSize: 40,
