@@ -32,7 +32,7 @@ export class App extends React.Component {
       <div style={appStyle}>
         <Section title="Please leave feedback">
           <Feedback
-            state={this.state}
+            options={this.state}
             onLeaveFeedback={this.onLeaveFeedback}
           />
         </Section>

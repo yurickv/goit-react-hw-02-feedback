@@ -1,9 +1,9 @@
 import css from './Feedback-style.module.css';
 import PropTypes from 'prop-types';
 
-export const Feedback = ({ state, onLeaveFeedback }) => {
+export const Feedback = ({ options, onLeaveFeedback }) => {
 
-    const nameOfState = Object.keys(state);
+    const nameOfState = Object.keys(options);
 
     return (
         <div className={css.buttonThumb}>
