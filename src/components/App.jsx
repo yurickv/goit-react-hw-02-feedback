@@ -11,11 +11,11 @@ export class App extends React.Component {
     bad: 0
   }
 
-  onLeaveFeedback = (event) => {
-    const nameButton = event.target.name
+  onLeaveFeedback = (type) => {
+
     this.setState(prevState => {
       return {
-        [nameButton]: prevState[nameButton] + 1
+        [type]: prevState[type] + 1
       }
     })
   }

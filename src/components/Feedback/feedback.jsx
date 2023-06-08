@@ -8,9 +8,9 @@ export const Feedback = ({ options, onLeaveFeedback }) => {
     return (
         <div className={css.buttonThumb}>
 
-            {nameOfState.map((e, index) => (
-                <button className={css.button} key={index} name={e} onClick={onLeaveFeedback}>
-                    {CapitalizeFirstLetter(e)}
+            {nameOfState.map((opt, index) => (
+                <button className={css.button} key={index} onClick={() => onLeaveFeedback(opt)}>
+                    {CapitalizeFirstLetter(opt)}
                 </button>))
             }
 
